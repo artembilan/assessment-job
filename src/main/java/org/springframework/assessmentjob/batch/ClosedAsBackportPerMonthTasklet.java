@@ -38,7 +38,7 @@ public class ClosedAsBackportPerMonthTasklet extends BaseGithubSearchTasklet {
 
 	@Override
 	public String getQuery() {
-		return properties.getProjectRepo() + " is:issue closed:%s is:closed label:\"backport 5.3.x\",\"backport 5.4.x\"";
+		return properties.getProjectRepo() + " is:issue closed:%s is:closed label:\"has: backport\"";
 	}
 
 	@Override
