@@ -38,7 +38,7 @@ public class ClosedAsTaskPerMonthTasklet extends BaseGithubSearchTasklet {
 
 	@Override
 	public String getQuery() {
-		return properties.getProjectRepo() + " is:issue closed:%s is:closed label:\"type: task\"";
+		return properties.getProjectRepo() + " is:issue closed:%s is:closed label:\"type: refactoring\"";
 	}
 
 	@Override
